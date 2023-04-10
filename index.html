@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КУРОЧКА</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kurale&family=Open+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <section class="home">
+            <!-- <img class="home__img" src="img/dish.jpg" alt=""> -->
+            <video class="home__video" src="img/dish.mp4" autoplay loop muted></video>
+            <div class="home__container">
+                <div class="container">
+                    <nav class="top-menu">
+                        <ul class="top-menu__list">
+                            <li class="top-menu__item"><a href="#about">О РЕСТОРАНЕ</a></li>
+                            <li class="top-menu__item"><a href="#team">КОМАНДА</a></li>
+                            <li class="top-menu__item"><a href="#order">ЗАКАЗАТЬ</a></li>
+                            <li class="logo"><img src="img/logo.png" alt=""></li>
+                            <li class="top-menu__item"><a href="#menu">МЕНЮ</a></li>
+                            <li class="top-menu__item"><a href="#events">МЕРОПРИЯТИЯ</a></li>
+                            <li class="top-menu__item"><a href="#contacts">КОНТАКТЫ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="container home__container-center">
+                    <div class="time-work">Пн - Пт: 8 - 22, Сб - Вс: 9 - 24</div>
+                    <div class="home__text">
+                        <h6>РЕСТОРАН</h6>
+                        <h1>КУРОЧКА</h1>
+                        <div class="home__btns">
+                            <a href="#order" class="btn-order">ЗАКАЗАТЬ СТОЛИК</a>
+                            <a href="#about">О РЕСТОРАНЕ</a>
+                        </div>
+                        <a href="#about" class="arrow__about">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="socials">
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#twitter"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container about__container">
+                <div class="about__text">
+                    <h2>О РЕСТОРАНЕ</h2>
+                    <p class="intro">
+                        Волшебная атмосфера, безукоризненное обслуживание, изысканный интерьер и, самое главное,
+                        богатейший выбор вкуснейших блюд отменного качества – именно эти характеристики привлекают
+                        гостей в наш ресторан
+                    </p>
+                    <p>
+                        Официанты этого заведения знают все тонкости приготовления блюд, они подскажут гостям наиболее
+                        подходящие для них яства. Тут хорошо знают постоянных клиентов, умело угождая их вкусам.
+                    </p>
+                    <p>
+                        Идеально дополняет ресторан уютная кофейня, находящаяся на первом этаже. Чашечка изумительного
+                        кофе и сладости от местного кондитера зарядят вас бодростью и позитивной энергией.
+                    </p>
+                </div>
+                <div class="about__img">
+                    <img src="img/about-img.png" alt="">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team" id="team">
+            <div class="container">
+                <h6>НАША КОМАНДА</h6>
+            </div>
+            <div class="container team__container">
+                <div class="team__img">
+                    <img src="img/team-img.png" alt="">
+                    <div class="circle"></div>
+                </div>
+                <div class="team__text">
+                    <h2>ШЕФ-ПОВАР</h2>
+                    <p class="intro">
+                        За подбор продуктов и приготовление вкусных блюд отвечает наш высококвалифицированный шеф-повар.
+                        Блюда в его исполнении превращаются в настоящие шедевры. Никто не останется равнодушным к такому
+                        непревзойденному сочетанию.
+                    </p>
+                    <p>
+                        Своей работой мы хотим радовать каждого нашего посетителя. Мы гарантируем всем клиентам, что
+                        время, проведенное в нашем заведении, будет отличаться особым теплом и изысканным вкусом.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="order" id="order">
+            <div class="container order__container">
+                <div class="order__text">
+                    <h2>ЗАКАЗАТЬ СТОЛИК</h2>
+                    <form action="" class="order-form">
+                        <input type="text" placeholder="Имя" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Телефон" required>
+                        <div class="order__select">
+                            <select required>
+                                <option value="">Кол-во людей</option>
+                                <option value="1">1</option>
+                                <option value="2-5">2-5</option>
+                                <option value="5-10">5-10</option>
+                                <option value="10-40">10-40</option>
+                                <option value="40-100">40-100</option>
+                            </select>
+                        </div>
+                        <input type="text" placeholder="Дата (дата/месяц)" required>
+                        <div class="order__select">
+                            <select required>
+                                <option value="">Время</option>
+                                <option value="10:00 - 14:00">10:00 - 14:00</option>
+                                <option value="14:00 - 18:00">14:00 - 18:00</option>
+                                <option value="18:00 - 23:00">18:00 - 23:00</option>
+                            </select>
+                        </div>
+                        <button type="submit">ОФОРМИТЬ ЗАКАЗ</button>
+                    </form>
+                </div>
+                <div class="order__img">
+                    <img src="img/order-img.png" alt="">
+                    <div class="circle"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="order__contacts">
+                    Пн - Пт: <strong>8 - 22</strong>, Сб - Вс: <strong>9 - 23</strong>, Телефон: <a
+                        href="tel:+77054043337">+77054043337</a>/<a href="tel:+77054043117">+77054043117</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="spec">
+            <div class="container spec__container">
+                <h6>СПЕЦ-ПРЕДЛОЖЕНИЯ</h6>
+            </div>
+            <div class="swiper-container spec__slider">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide spec__slide">
+                        <div class="container spec__slide-container">
+                            <div class="spec__img">
+                                <img src="img/slide1.png" alt="">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="spec__text">
+                                <h2>КУРОЧКА</h2>
+                                <p class="intro">Невероятно красивый десерт Пирожное "СЛАДКАЯ КУРОЧКА".
+                                    3D пирожное в форме яйца в гнёздышке.</p>
+                                <p>Узнать, каково золото на вкус, приглашаем в наш ресторан. Темный бельгийский шоколад,
+                                    Амаретто, мусс
+                                    мята-лемонграсс,
+                                    центр морковь-маракуйя — удержаться почти невозможно.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide spec__slide">
+                        <div class="container spec__slide-container">
+
+                            <div class="spec__img">
+                                <img src="img/slide2.png" alt="">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="spec__text">
+                                <h2>УТИННЫЕ ИСТОРИИ</h2>
+                                <p class="intro">Утиные ножки здесь маринуют с травами, запекают, а потом тушат, пока
+                                    мясо не приобретет
+                                    нежную текстуру.</p>
+                                <p>К утке подают красную капусту, томлёную в красном вине, а также толчёный картофель со
+                                    шкварками.
+                                    Фермерскую утиную
+                                    грудку обжаривают и подают с соусом демиглас и вишнёвым кули, а также с нежным
+                                    картофельным гратеном,
+                                    запечённым со
+                                    сливками, тимьяном и сыром пармезан.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide spec__slide">
+                        <div class="container spec__slide-container">
+                            <div class="spec__img">
+                                <img src="img/slide1.png" alt="">
+                                <div class="circle"></div>
+                            </div>
+                            <div class="spec__text">
+                                <h2>КУРОЧКИНО ЯЙЦО</h2>
+                                <p class="intro">Невероятно красивый десерт Пирожное "КУРОЧКИНО ЯЙЦО".
+                                    3D пирожное в форме яйца в гнёздышке.</p>
+                                <p>Узнать, каково золото на вкус, приглашаем в наш ресторан. Темный бельгийский шоколад,
+                                    Амаретто, мусс
+                                    мята-лемонграсс,
+                                    центр морковь-маракуйя — удержаться почти невозможно.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination spec__pagination"></div>
+            </div>
+        </section>
+
+        <section class="menu" id="menu">
+            <h2>НАШЕ МЕНЮ</h2>
+            <p class="intro menu__intro">Предлагаем насладиться кухней от профессиональных поваров ресторана КУРОЧКА!
+            </p>
+            <div class="tabs__container">
+                <ul class="tabs">
+                    <li class="tabs__item active" data-tab="#snacks">Закуски</li>
+                    <li class="tabs__item" data-tab="#meats">Мясные блюда</li>
+                    <li class="tabs__item" data-tab="#salads">Салаты</li>
+                    <li class="tabs__item">Десерты</li>
+                    <li class="tabs__item">Вина</li>
+                    <li class="tabs__item">Напитки</li>
+                </ul>
+            </div>
+            <div class="menu__sliders">
+                <!-- slider1 -->
+                <div class="menu__slider-block show" id="snacks">
+                    <div class="swiper-container menu__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu1.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu1.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu1.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu1.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu1.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu1.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination menu__pagination"></div>
+                    </div>
+                </div>
+                <!-- end slider1 -->
+                <!-- slider2 -->
+                <div class="menu__slider-block" id="meats">
+                    <div class="swiper-container menu__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu2.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination menu__pagination"></div>
+                    </div>
+                </div>
+                <!-- end slider2 -->
+                <!-- slider3 -->
+                <div class="menu__slider-block" id="salads">
+                    <div class="swiper-container menu__slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu3.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu3.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu3.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu3.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu3.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="menu__item">
+                                    <img class="menu__item-img" src="img/menu3.jpg" alt="">
+                                    <div class="menu__item-text">
+                                        <h6 class="menu__title">Фирменный цезарь</h6>
+                                        <h6 class="menu__price">3.000 тг</h6>
+                                        <p class="menu__desc">с тигровыми креветками, копченой куриной грудкой,
+                                            курицей-гриль, салатом
+                                            Айсберг, перепелиными яйцами, томатами Черри и
+                                            и соусом Дор-Блю</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination menu__pagination"></div>
+                    </div>
+                </div>
+                <!-- end slider3 -->
+            </div>
+        </section>
+
+        <section class="events" id="events">
+            <h6>ЧАСТНЫЕ МЕРОПРИЯТИЯ</h6>
+            <div class="container events__container">
+                <div class="left__event">
+                    <img src="img/events1.png" alt="">
+                    <div class="circle"></div>
+                    <div class="event__title">свадебный банкет</div>
+                </div>
+                <div class="right__event">
+                    <img src="img/events2.png" alt="">
+                    <div class="circle"></div>
+                    <div class="event__title">корпоративные вечеринки</div>
+                </div>
+            </div>
+            <div class="container events__contacts">
+                По вопросам частных мероприятий звоните: <a href="tel:+77054043117">+77054043117</a>/<a
+                    href="tel:+77054043337">+77054043337</a> или используйте контактную форму.
+            </div>
+        </section>
+
+        <section class="contacts" id="contacts">
+            <h2>КОНТАКТЫ</h2>
+            <p class="intro contacts__intro">Вы можете оставить нам сообщение через форму ниже, или любым другим,
+                удобным вам способом
+            </p>
+            <form action="" class="container contacts__form">
+                <input type="text" placeholder="Имя" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Телефон" required>
+                <textarea placeholder="Сообщение"></textarea>
+                <div class="contacts__data-submit">
+                    <div class="contacts__data">
+
+                        <div class="contacts__data-item">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#map"></use>
+                            </svg>
+                            <span>пл.Победы 25,г.Павлодар </span>
+                        </div>
+                        <div class="contacts__data-item">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#phone"></use>
+                            </svg>
+                            <a href="tel:+77054043337">+77054043337</a>
+                        </div>
+                        <div class="contacts__data-item">
+                            <svg>
+                                <use xlink:href="img/sprite-icons.svg#email"></use>
+                            </svg>
+                            <a href="mailto:info@kuro4ka.com">info@kuro4ka.com</a>
+                        </div>
+                    </div>
+                    <button type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+                </div>
+            </form>
+        </section>
+
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.7481828232526!2d76.9435112!3d52.2842735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x42f835292c12af77%3A0xa207871e6718a24e!2z0L_Quy4g0J_QvtCx0LXQtNGLIDI1LCDQn9Cw0LLQu9C-0LTQsNGAIDE0MDAwMA!5e0!3m2!1sru!2skz!4v1680611878556!5m2!1sru!2skz"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <footer>
+            &copy; Copyright <a href="https://t.me/cruwberg">Господин Ахмедов Фозилжон</a> 2023
+        </footer>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

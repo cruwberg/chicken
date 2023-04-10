@@ -1,0 +1,29 @@
+.about {
+    padding: 95px 0 105px 0;
+}
+
+.about__container {
+    @include flex(space-between, center);
+}
+
+.about__text {
+    width: 50%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.about__img {
+    width: 50%;
+    max-width: 570px;
+    position: relative;
+
+    .circle {
+        right: 0;
+        transform: translate(30%, -50%);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

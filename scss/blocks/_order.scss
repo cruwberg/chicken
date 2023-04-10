@@ -1,0 +1,127 @@
+.order {
+    padding: 100px 0 45px 0;
+}
+
+.order__container {
+    @include flex(space-between, center);
+}
+
+.order__text {
+    width: 50%;
+    max-width: 565px;
+    text-align: center;
+}
+
+.order-form {
+    @include flex(space-between, center);
+
+    input {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        border-radius: 5px;
+        background: $gray;
+        border: 1px solid transparent;
+        outline: none;
+        height: 60px;
+        padding: 0 20px;
+        font-weight: 400;
+        font-size: 14px;
+
+        &::placeholder {
+            color: $gray-opacity;
+        }
+
+        &:focus {
+            border: 1px solid $yellow;
+        }
+    }
+
+    .order__select {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+        position: relative;
+
+        &::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: url(../../img/select-arrow.svg) center no-repeat;
+            position: absolute;
+            right: 10px;
+            top: calc(50% - 10px);
+            pointer-events: none;
+        }
+
+        select {
+            width: 100%;
+            background: #E5E5E5;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            height: 60px;
+            outline: none;
+            padding: 0 20px;
+            font-weight: 400;
+            font-size: 14px;
+            appearance: none;
+
+            &:not(:valid) {
+                color: rgba(51, 51, 51, 0.5);
+            }
+        }
+
+        option {
+            color: $black;
+        }
+    }
+
+    button {
+        width: 100%;
+        border: none;
+        background: $yellow;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 12px;
+        font-family: $os;
+        border-radius: 5px;
+        color: $white;
+        height: 60px;
+        text-transform: uppercase;
+        transition: 0.3s;
+
+        &:hover {
+            background: darken($yellow, 5%);
+        }
+    }
+}
+
+.order__img {
+    width: 50%;
+    max-width: 475px;
+    position: relative;
+    right: 40px;
+
+    .circle {
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+        filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.5));
+    }
+}
+
+.order__contacts {
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: rgba(51, 51, 51, 0.5);
+    padding-top: 45px;
+
+    a {
+        color: rgba(51, 51, 51, 0.5);
+        font-weight: 700;
+    }
+}
